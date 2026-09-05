@@ -105,9 +105,18 @@
   footer a:hover{color:var(--bone);border-bottom-color:var(--bone)}
   @media (max-width:820px){
     .figure img{opacity:.66;filter:saturate(0) blur(6px);object-position:100% 40%}
-    main{min-height:auto;padding-top:9vh}
-    nav{grid-auto-flow:row;grid-auto-columns:auto;width:max-content}
+    main{min-height:auto;padding-top:8vh}
+    nav{grid-auto-flow:row;grid-auto-columns:auto;width:max-content;
+        margin-top:clamp(2rem,5.5vh,3rem)}
     nav a{white-space:nowrap}
+    /* phones and portrait tablets get their own, larger scale. Nothing here can
+       reach desktop, which begins at 821px. */
+    h1{font-size:clamp(2.25rem,9.6vw,3rem)}
+    .obelus{font-size:1.3rem;margin:1.15rem 0 1rem}
+    .sub{font-size:1.22rem}
+    .byline{font-size:.92rem;margin-top:.9rem}
+    nav a{font-size:.88rem;padding:.8em 1.35em}
+    footer{font-size:.84rem}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
